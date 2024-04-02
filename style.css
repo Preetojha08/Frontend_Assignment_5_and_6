@@ -1,0 +1,121 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header styles */
+.head {
+    width: 80%;
+    background-color: rgb(42, 42, 146);
+    color: white;
+    padding: 3em;
+    margin: 2em auto;
+    border-radius: 1em;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 3em;
+}
+
+/* Paragraph inside header styles */
+.head p {
+    margin-top: 1em;
+}
+
+/* Amount container styles */
+.amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Amount input styles */
+#amount {
+    padding: 2em;
+    outline-style: none;
+    border: 1px solid rgb(25, 25, 128);
+    border-radius: 1em;
+    width: 80%;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Currency select styles */
+#currency {
+    padding: 2em;
+    border: 1px solid rgb(25, 25, 128);
+    border-radius: 1em;
+    font-size: 1em;
+    outline: none;
+    width: 80%;
+    background-image: url('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/274/flag-for-united-states_1f1fa-1f1f8.png');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 40px;
+}
+
+/* Currency option styles */
+#currency option {
+    background-color: rgb(42, 42, 146);
+    color: white;
+}
+
+/* Form styles */
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* General styles for labels, inputs, selects, and buttons */
+label,
+input,
+select,
+button {
+    margin-top: 10px;
+}
+
+/* Button styles */
+button {
+    padding: 12px 24px; /* Adjusted padding */
+    cursor: pointer;
+    background-color: rgb(42, 42, 146);
+    border: none;
+    color: white;
+    border-radius: 1em;
+    margin-top: 2.5em;
+    width: 80%;
+    font-size: 1.2em; /* Increased font size */
+}
+
+/* Conversion result styles */
+#conversionResult {
+    margin-top: 20px;
+    margin-left: 155px;
+    margin-bottom: 20px; /* Adjusted margin */
+    font-size: 1.2em;
+    background-color: #b3d9ff; /* Light blue background */
+    padding: 15px; /* Adjusted padding */
+    border-radius: 10px;
+    width: 80%; /* Adjusted width */
+    display: none; /* Initially invisible */
+}

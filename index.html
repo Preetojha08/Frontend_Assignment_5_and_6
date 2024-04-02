@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header section -->
+        <div class="head">
+            <h1>Currency Converter</h1>
+            <p>Convert USD to CAD at the real exchange rate.</p>
+        </div>
+
+        <!-- Container for conversion result -->
+        <div id="conversionResult"></div>
+
+        <!-- Form section -->
+        <div class="form">
+            <!-- Amount input -->
+            <input type="number" id="amount" min="0" step="0.01" placeholder="Enter amount">
+
+            <!-- Currency select -->
+            <select id="currency">
+                <option value="USD">🇺🇸 USD</option>
+                <option value="CAD">🇨🇦 CAD</option>
+            </select>
+
+            <!-- Convert button -->
+            <button onclick="convertCurrency()">Convert</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for currency conversion -->
+    <script src="script.js"></script>
 </body>
 </html>
